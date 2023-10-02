@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<!-- сайт на английском -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +13,16 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
+<!--         И зачем здесь два контейнера? Тут хватает одного -->
         <button class="menu">
           <img src="" alt="бургер меню">
         </button>
         <div class="logo">
           <img src="" alt="логотип компании">
         </div>
+<!--         Зачем тут див, когда нужна ссылка? -->
         <button class="header__download">DOWNLOAD</button>
+<!--         Скачивание всегда ссылка -->
       </div>
     </div>
   </header>
@@ -25,19 +30,23 @@
     <section class="info">
       <div class="container">
         <div class="info__inner">
+<!--           Зачем здесь два контейнера? -->
           <div class="info__box">
             <h1 class="info__title title">
               A Great App Makes Your Life Better
             </h1>
+<!--             Слишком обширно для h1 -->
             <p class="info__text text">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
               enim
               velit
               mollit.
             </p>
+<!--             Не бэм -->
             <h3 class="download__title">
               Download App Now
             </h3>
+<!--             Тут непонятная структура заголовков -->
             <ul class="download__list">
               <li class="download__item">
                 <a href="" class="download__link">
@@ -50,6 +59,7 @@
                 </a>
               </li>
             </ul>
+<!--             тут не совсем список, просто две ссылки на скачивание -->
           </div>
           <div class="info__img">
             <img src="" alt="прототип внешнего вида приложения">
@@ -60,6 +70,7 @@
     <section class="about">
       <div class="container">
         <div class="about__inner">
+<!--           Опять двойное обертывание -->
           <h2 class="about__title title">
             About Our App
           </h2>
@@ -69,6 +80,7 @@
           <div class="about__img">
             <img src="" alt="картинка одной из страниц приложения">
           </div>
+<!--           Зачем? Картинке можно задать display: block -->
           <ul class="advantages">
             <li class="advantages__item">
               <h3 class="advtanges__item-title">Creative design</h3>
@@ -95,6 +107,7 @@
     <section class="features">
       <div class="container">
         <div class="features__inner">
+<!--           Опять двойное обертывание -->
           <h2 class="feature__title title">
             App features
           </h2>
@@ -106,6 +119,7 @@
               <div class="features__item-img">
                 <img src="" alt="картинка сообщения">
               </div>
+<!--               Зачем??? -->
               <h3 class="features__item-title">
                 Full free chat
               </h3>
@@ -269,6 +283,7 @@
               <div class="slider__profession">
                 CO-FUNDER
               </div>
+<!--               текст в див не станет -->
               <p class="slider__text text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
                 vitae, nullam
@@ -285,6 +300,7 @@
             </button>
             <button class="slider__button">
             </button>
+<!--             обернуть вместе -->
           </div>
         </div>
       </div>
