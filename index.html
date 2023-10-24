@@ -4,101 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Appoly</title>
+  <!-- название компании -->
 </head>
 
 <body>
   <header class="header">
     <div class="header__wrapper">
 
-      <button class="menu">
-        <img src="" alt="бургер меню">
+      <button class="header__burger burger">
+        <img class="burger__img" src="#" alt="бургер меню">
       </button>
-      <a href="#" class="logo">
-        <img src="logo" alt="логотип компании">
+      <a href="#" class="header__logo logo">
+        <img class="logo__img" src="#" alt="логотип компании">
       </a>
       <a href="#" class="header__download">DOWNLOAD</a>
 
     </div>
   </header>
   <main class="main">
-    <section class="info">
-      <div class="wrapper__info">
+    <h1 class="visually-hidden">Applly - app that makes your life better</h1>
+    <section class="main__info info">
+      <div class="info__wrapper">
 
         <div class="info__box">
           <h2 class="info__title title">
             A Great App Makes Your Life Better
           </h2>
           <p class="info__text text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            Amet minim mollit
+             non deserunt ullamco
+              est sit aliqua dolor do
+               amet sint. Velit
+                officia consequat duis
             enim
             velit
             mollit.
           </p>
-          <h3 class="download__title">
+          <h3 class="info__subtitle">
             Download App Now
           </h3>
-          <div class="download__links">
+          <div class="info__download download">
 
             <a href="" class="download__link">
-              <img src="" alt="кнопка для скачивания с Google Play">
+              <img src="#" alt="кнопка для скачивания с Google Play">
+              <span class="visually-hidden">Download our app from Google Play</span>
             </a>
-
-
             <a href="" class="download__link">
-              <img src="" alt="кнопка для скачикая с App store">
+              <img src="#" alt="кнопка для скачикая с App store">
+              <span class="visually-hidden">Download our app from App Store</span>
             </a>
 
           </div>
         </div>
 
-        <img class="info__img" alt="прототип внешнего вида приложения">
+        <img class="info__example" alt="прототип внешнего вида приложения">
 
 
       </div>
     </section>
-    <section class="about">
+    <section class="main__about about">
 
       <div class="about__wrapper">
-        <h2 class="about__title title">
+        <h2 class="about__title">
           About Our App
         </h2>
-        <p class="about__text text">
+        <p class="about__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
         </p>
-
-        <img class="about__img" alt="картинка одной из страниц приложения">
-
-        <ul class="advantages">
-          <li class="advantages__item">
-            <h3 class="advtanges__title">Creative design</h3>
-            <p class="advtanges__text">
-              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advtanges__title">easy to use</h3>
-            <p class="advtanges__text">
-              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advtanges__title">easy to use</h3>
-            <p class="advtanges__text">
-              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-            </p>
-          </li>
-        </ul>
+        <div class="about__content-wrapper">
+          <img class="about__img" alt="картинка одной из страниц приложения">
+          
+          <ul class="about__advantages advantages">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Creative design</h3>
+              <p class="advantages__text">
+                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">easy to use</h3>
+              <p class="advantages__text">
+                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">easy to use</h3>
+              <p class="advantages__text">
+                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+              </p>
+            </li>
+          </ul>
+        </div>
+        
       </div>
 
     </section>
-    <section class="opportunities">
+    <section class="main__features features">
 
-      <div class="opportunities__wrapper">
-        <h2 class="opportunities__title title">
+      <div class="features__wrapper">
+        <h2 class="features__title">
           App features
         </h2>
-        <p class="feature__text text">
+        <p class="feature__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
         </p>
         <ul class="features__list">
@@ -133,12 +141,9 @@
             <h3 class="features__title">
               awsome ui design
             </h3>
-            <p class="featuse__text">
+            <p class="features__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-          </li>
-
-          <li class="features__item">
             <img class="features__img features__img--big" src="#" alt="страницы аналитики открытая с телефона">
           </li>
 
@@ -181,140 +186,140 @@
       </div>
 
     </section>
-    <section class="statistics">
+    <section class="main__app app">
 
-      <div class="statistics__wrapper">
-        <h2 class="statistics__title title">
+      <div class="app__wrapper">
+        <h2 class="visually-hidden">About our app</h2>
+        <p class="app__title">
           Download App Now
-        </h2>
-        <p class="statistics__text text">
+        </p>
+        <p class="app__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
           nullam
           lobortis enim.
         </p>
-        <ul class="download__links">
-
+        <div class="app__download download">
           <a href="" class="download__link">
-            <img src="" alt="кнопка для скачивания с Google Play">
+            <img src="#" alt="кнопка для скачивания с Google Play">
+              <span class="visually-hidden">Download our app from Google Play</span>
+          </a>
+          <a href="" class="download__link">
+            <img src="#" alt="кнопка для скачикая с App store">
+              <span class="visually-hidden">Download our app from App Store</span>
           </a>
 
+        </div>
 
-          <a href="" class="download__link">
-            <img src="" alt="кнопка для скачикая с App store">
-          </a>
-
-        </ul>
-
-        <ul class="statistics__list">
-          <li class="statistics__item">
-            <div class="statistics__img">
-              <img src="" alt="значок скачивания">
-            </div>
-            <h3 class="statistics__number">
+        <ul class="app__list">
+          <li class="app__item">
+              <img class="app__img" src="#" alt="значок скачивания">
+            <p class="app__number">
               59865
-            </h3>
-            <div class="statistics__info">
+            </p>
+            <h3 class="app__info">
               Download
-            </div>
+            </h3>
           </li>
 
-          <li class="statistics__item">
-            <div class="statistics__img">
-              <img src="" alt="значок лайка">
-            </div>
-            <h3 class="statistics__number">
+          <li class="app__item">
+              <img class="app__img" src="#" alt="значок лайка">
+            <p class="app__number">
               29852
-            </h3>
-            <div class="statistics__info">
+            </p>
+            <h3 class="app__info">
               Like
-            </div>
+            </h3>
           </li>
 
-          <li class="statistics__item">
-            <div class="statistics__item-img">
-              <img src="" alt="звёздочка">
-            </div>
-            <h3 class="statistics__item-number">
+          <li class="app__item">
+              <img class="app__img" src="#" alt="звёздочка">
+            <p class="app__number">
               1500
-            </h3>
-            <div class="statistics__item-text">
+            </p>
+            <h3 class="app__text">
               5 star rating
-            </div>
+            </h3>
           </li>
         </ul>
 
        
-          <img  class="statistics__img statistics__img--big" src="#" alt="дизайн старницы по аналитике">
+          <img  class="app__img app__img--big" src="#" alt="дизайн старницы по аналитике">
        
       </div>
 
     </section>
-    <section class="video">
-      <div class="video__wrapper">
-        <h2 class="video__title title">
+    <section class="main__how-to-use how-to-use">
+      <div class="how-to-use__wrapper">
+        <h2 class="how-to-use__title title">
           how to use the app perfectly
         </h2>
-        <p class="video__text text">
+        <p class="how-to-use__text text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
         </p>
-        <video class="video__content" src="#"></video>
+        <!-- <how-to-use class="how-to-use__content" src="#"></how-to-use> -->
+        <img class="how-to-use__video" src="#" alt="">
       </div>
     </section>
-    <section class="rewiev">
-
+    <section class="main__rewiev rewiev">
         <div class="rewiev__wrapper">
-          <div class="rewiev__title title">
+          <h2 class="rewiev__title">
             Our Happy Cutomar
-          </div>
-          <p class="rewiev__text text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+          </h2>
+          <p class="rewiev__text">
+            Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit.
+              Viverra nunc ante velit vitae.
           </p>
           <div class="slider">
             <div class="slider__item">
-              <div class="slider__img">
-                <img src="" alt="аватарка">
-              </div>
-              <h2 class="slider__name">
+                <img class="slider__img" src="#" alt="аватарка">
+              <h3 class="slider__name">
                 Ann Lubin
-              </h2>
-              <div class="slider__profession">
+              </h3>
+              <p class="slider__profession">
                 CO-FUNDER
-              </div>
+              </p>
               <p class="slider__text text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus
                 vitae, nullam
                 lobortis enim.
               </p>
             </div>
-            <button class="slider__button slider__button_active">
-            </button>
-            <button class="slider__button">
-            </button>
-            <button class="slider__button">
-            </button>
-            <button class="slider__button">
-            </button>
-            <button class="slider__button">
-            </button>
+            <div class="slider__controls">
+              <button class="slider__button slider__button_active">
+              </button>
+              <button class="slider__button">
+              </button>
+              <button class="slider__button">
+              </button>
+              <button class="slider__button">
+              </button>
+              <button class="slider__button">
+              </button>
+            </div>
           </div>
         </div>
      
     </section>
-    <section class="blog">
+    <section class="main__blog blog">
 
       <div class="blog__wrapper">
-        <h2 class="blog__title title"></h2>
-        <p class="blog__text text">
-
+        <h2 class="blog__title">Our recent blog</h2>
+        <p class="blog__text">
+          Lorem ipsum dolor
+           sit amet, consectetur
+            adipiscing elit.
+             Viverra nunc ante
+              velit vitae.
         </p>
-        <ul class="articles__list">
+        <ul class="blog__articles articles">
           <li class="articles__item">
 
-            <img class="articles__img" src="" alt="снэпчат">
+            <img class="articles__img" src="#" alt="снэпчат">
             <h3 class="articles__title">
               The Snap Pixel: How It Works and How to Install
             </h3>
-            <p class="articles__text text">
+            <p class="articles__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
               nullam
               lobortis enim.
@@ -327,11 +332,11 @@
 
           <li class="articles__item">
 
-            <img class="articles__img" src="" alt="инстаграмм">
+            <img class="articles__img" src="#" alt="инстаграмм">
             <h3 class="articles__title">
               Global Partner Solutions: A Partnership of Innova
             </h3>
-            <p class="articles__text text">
+            <p class="articles__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
               nullam
               lobortis enim.
@@ -344,7 +349,7 @@
 
           <li class="articles__item">
 
-            <img class="articles__img" src="" alt="ты можешь">
+            <img class="articles__img" src="#" alt="ты можешь">
             <h3 class="articles__title">
               2021: An opportunity for Snapchatters to start fre
             </h3>
@@ -360,41 +365,46 @@
           </li>
         </ul>
       </div>
+    </section>
 
+    <section class="main__contacts contacts">
+      <div class="contacts__item">
+    
+        <img class="contacts__item-img" src="contacts__item-img" alt="значок gmail">
+    
+        <a href="mailto:info.design@gmail.com" class="contacts__item-link">info.design@gmail.com</a>
+      </div>
+      <div class="contacts__item">
+    
+        <img class="contacts__item-img" src="#" alt="значок gmail">
+    
+        <a href="tel:+" class="contacts__item-link">+880 321 655 9985</a>
+      </div>
     </section>
   </main>
   <footer class="footer">
 
     <div class="footer__wrapper">
-      <div class="contacts">
-        <div class="contacts__item">
-
-          <img class="contacts__item-img" src="contacts__item-img" alt="значок gmail">
-
-          <a href="#" class="contacts__item-link">info.design@gmail.com</a>
-        </div>
-        <div class="contacts__item">
-
-          <img class="contacts__item-img" src="" alt="значок gmail">
-
-          <a href="#" class="contacts__item-link">info.design@gmail.com</a>
-        </div>
-      </div>
-      <div class="social">
-        <h3 class="social__title title">Logo</h3>
-        <p class="social__text text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae,
+      
+      <div class="footer__social social">
+        <h3 class="social__title">Logo</h3>
+        <p class="social__text">
+          Lorem ipsum dolor
+           sit amet, consectetur
+            adipiscing elit. Viverra
+             nunc ante velit vitae.
+              Est tellus vitae,
           nullam
           lobortis enim.
         </p>
         <ul class="social__list">
-          <li class="social__item"><img src="" alt="facebook"></li>
-          <li class="social__item"><img src="" alt="instagram"></li>
-          <li class="social__item"><img src="" alt="twitter"></li>
-          <li class="social__item"><img src="" alt="youtube"></li>
+          <li class="social__item"><img src="#" alt="facebook"></li>
+          <li class="social__item"><img src="#" alt="instagram"></li>
+          <li class="social__item"><img src="#" alt="twitter"></li>
+          <li class="social__item"><img src="#" alt="youtube"></li>
         </ul>
       </div>
-      <div class="links">
+      <div class="footer__links links">
         <h3 class="links__title title">
           quick link
         </h3>
@@ -405,24 +415,28 @@
           <li class="links__item"><a href="#" class="links__link">articles</a></li>
         </ul>
       </div>
-      <div class="letter">
-        <h3 class="letter__title title">
-          news letter
+      <div class="footer__news news">
+        <h3 class="news__title">
+          news news
         </h3>
-        <p class="letter__text text">
-          Subscribe our newsletter to get our latest
+        <p class="news__text">
+          Subscribe our newsnews to get our latest
           update & news
         </p>
-        <form action="#" method="get" class="letter__form">
-          <label for="" class="letter__label"><input class="letter__input-text" type="text" name="mail" value=""
-              placeholder="Your email address">
+        <form action="#" method="post" class="news__form">
+          <label class="news__label">
+            <input class="news__input-text" type="email" name="mail" value=""
+              placeholder="Your email address">news
           </label>
-          <button class="letter__button" type="submit"><img src="#" alt="бумажный самолётик"></button>
+          <button class="news__button" type="submit">
+            <img src="#" alt="бумажный самолётик">
+            <span class="visually-hidden">Subscribe</span>
+          </button>
         </form>
       </div>
       <div class="copyright">
 
-        <img class="copyright__img" src="" alt="copyright logo">
+        <img class="copyright__img" src="#" alt="copyright logo">
 
         <p class="copyright__text">Copyright 2021 .Ojjomedia. All Right Reserved.</p>
       </div>
