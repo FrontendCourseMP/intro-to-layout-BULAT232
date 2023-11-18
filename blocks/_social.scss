@@ -1,0 +1,39 @@
+@use "../ulits/mixin";
+
+.social {
+  
+}
+
+.social__title {
+  @include mixin.title;
+  color: var(--White, #FFF);
+    /* H4-31.25px */
+    font-family: Josefin Sans;
+    font-size: 31.25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47.25px;
+    /* 151.2% */
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.social__text {
+  @include mixin.text;
+  color: #fff;
+}
+
+.social__list {
+  margin-top: 38px;
+  display: flex;
+}
+
+.social__item {
+    border-left: 1px solid #fff;
+    padding: 0 30px 0 30px;
+}
+
+.social__item:first-child{
+  padding-left: 0;
+  border-left: none;
+}

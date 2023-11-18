@@ -1,0 +1,36 @@
+@use "../ulits/mixin";
+
+.advantages {
+  margin-top: 75px;
+}
+
+.advantages__item {
+  width: 343px;
+  border-radius: 10px;
+    background: var(--White, #FFF);
+    padding: 18px 16px 10px 61px;
+  
+    /* Effect-1 */
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.advantages__title {
+  @include mixin.title;
+  font-size: 20px;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+.advantages__text {
+  @include mixin.text;
+  font-size: 16px;
+}
+
+.advantages__img{
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}

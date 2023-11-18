@@ -1,0 +1,29 @@
+@use "../ulits/mixin";
+
+
+.rewiev {
+  background: url(../img/review__bg.jpg), lightgray 50% / cover no-repeat;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding-bottom: 62px; 
+  padding-top: 60px;
+}
+
+.rewiev__wrapper {
+/*       @include mixin.mobile-wrapper; */
+}
+
+.rewiev__title {
+  @include mixin.title;
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.rewiev__text {
+  @include mixin.text;
+  color: #fff;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto 32px auto;
+}

@@ -1,0 +1,71 @@
+@use "../ulits/mixin";
+
+.info {
+  padding-top: 128px;
+  padding-bottom: 113px;
+  background: url('../img/info__bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+
+.info__wrapper{
+  @include mixin.mobile-wrapper
+}
+
+.info__container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 30px 12px 21px 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.info__box {
+  width: 323px;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 323px;
+    height: 370px;
+    border: 10px solid #7572FF;
+  }
+}
+
+.info__title {
+  @include mixin.title;
+  color: var(--Royal-blue, #5956E9);
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+.info__text {
+  @include mixin.text;
+  font-size: 16px;
+  color: var(--gray-paragraph, #6C6C72);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.info__subtitle {
+  @include mixin.title;
+  color: var(--Black, #232233);
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.info__download {}
+
+.info__example {
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+
+}

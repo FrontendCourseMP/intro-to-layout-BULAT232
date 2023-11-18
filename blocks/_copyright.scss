@@ -1,0 +1,33 @@
+@use "../ulits/mixin";
+
+.copyright {
+  position: relative;
+  margin-top: 83px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+  }
+}
+
+.copyright__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.copyright__text {
+  color: var(--White, #FFF);
+    text-align: center;
+    /* H8-12.8 */
+    font-family: Josefin Sans;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

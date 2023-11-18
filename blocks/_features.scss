@@ -1,0 +1,52 @@
+@use "../ulits/mixin";
+
+.features {
+    background: url(../img/features__bg.jpg), lightgray 50% / cover no-repeat;
+    background-repeat-x: no-repeat;
+    background-size: cover;
+}
+
+.features__wrapper {
+  @include mixin.mobile-wrapper;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+}
+
+.features__title {
+  @include mixin.title;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.features__title--big{
+  font-size: 25px;
+}
+
+.features__text {
+  @include mixin.text;
+  color: #fff;
+  text-align: center;
+  
+  margin-bottom: 40px;
+}
+
+.features__list {}
+
+.features__item {
+
+}
+
+.features__img {
+  display: block;
+  
+  margin: 0 auto 30px auto;
+}
+
+.features__img--big {
+  border-radius: 40px;  
+    box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.50);
+    margin-top: 60px;
+    margin-bottom: 120px;
+}

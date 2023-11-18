@@ -1,0 +1,23 @@
+@use "../ulits/mixin";
+
+.blog {
+  margin-top: 60px;
+}
+
+.blog__wrapper {
+      @include mixin.mobile-wrapper;
+}
+
+.blog__title {
+  @include mixin.title;
+  font-size: 25px;  
+  margin-bottom: 18px;
+}
+
+.blog__text {
+  @include mixin.text;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog__articles {}

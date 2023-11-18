@@ -1,0 +1,18 @@
+@use "../ulits/mixin";
+
+.footer {
+  background: var(--Black, #232233);
+  padding-top: 220px;
+  padding-bottom: 30px;
+  margin-top: -160px;
+}
+.footer__wrapper {
+    @include mixin.mobile-wrapper;
+    
+}
+
+.footer__social {}
+
+.footer__links {}
+
+.footer__news {}

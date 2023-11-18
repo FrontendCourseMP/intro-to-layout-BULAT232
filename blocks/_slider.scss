@@ -1,0 +1,87 @@
+@use "../ulits/mixin";
+
+.slider {
+
+}
+
+.slider__box{
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+  position: relative;
+
+}
+
+.slider__item {
+  min-width: 343px;
+  width: 343px;
+  border-radius: 10px;
+  background: var(--White, #FFF);
+  /* Effect-2 */
+  box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
+  padding: 20px 14px;
+}
+
+.slider__item {
+  position: relative;
+  transform: scale(2, 0.86);
+}
+
+.slider__item_active{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  transform: scale(1, 1);
+}
+
+.slider__img {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.slider__name {
+  @include mixin.title;
+  font-size: 25px;
+  color: var(--Black, #232233);
+}
+
+.slider__profession {
+  @include mixin.text;
+  color: var(--Black, #232233);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.slider__text {
+  @include mixin.text;
+  color: var(--gray-paragraph, #6C6C72);
+  text-align: center;
+}
+
+.slider__controls {
+  text-align: center;
+  margin-top: 42px;
+
+}
+
+.slider__button {
+  /* width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FFF; */
+  svg{
+    circle:nth-child(2){
+      display: none;
+    }
+  }
+  margin: 0 9px 0 9px;
+
+  &_active {
+    svg {
+        circle:nth-child(2) {
+          display: block;
+        }
+      }
+  }
+}

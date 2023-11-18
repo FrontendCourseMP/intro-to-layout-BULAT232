@@ -1,0 +1,23 @@
+@use "../ulits/mixin";
+
+.links {
+  margin-top: 60px;
+}
+
+.links__title {
+  @include mixin.title;
+  color: white;
+  text-align: left;
+  font-size: 25px;
+}
+
+.links__list {}
+
+.links__item {
+  margin-top: 11px;
+}
+
+.links__link {
+  color: #fff;
+  @include mixin.text;
+}

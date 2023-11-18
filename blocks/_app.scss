@@ -1,0 +1,78 @@
+@use "../ulits/mixin";
+
+.app {
+
+}
+
+.app__wrapper {
+  @include mixin.mobile-wrapper;
+  width: 329px;
+  padding-top: 103px;
+  padding-bottom: 60px;
+}
+
+.app__title {
+  @include mixin.title;
+  color: var(--Black, #232233);
+  /* H5-25px */
+  font-size: 25px;
+  text-align: left;
+  width: 288px;
+  margin-bottom: 18px;
+}
+
+.app__text {
+  @include mixin.text;
+  color: var(--gray-paragraph, #6C6C72);
+  font-size: 16px;
+  margin-bottom: 41px;
+}
+
+.app__download {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 61px;
+}
+
+.app__item {
+  width: 96px;
+  height: 100px;
+
+  border-radius: 5px;
+  background: var(--Royal-blue, #5956E9);
+  /* Effect-1 */
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  padding: 11px 0 12px 0;
+}
+
+.app__img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.app__number {
+  @include mixin.title;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: -3px;
+}
+
+.app__info {
+  @include mixin.text;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.app__img--big {
+  width: 335px;
+  height: auto;
+  margin-top: 60px;
+}

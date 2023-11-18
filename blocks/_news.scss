@@ -1,0 +1,44 @@
+@use "../ulits/mixin";
+
+.news {
+  margin-top: 60px;
+  
+}
+
+.news__title {
+  @include mixin.title;
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 11px;
+}
+
+.news__text {
+  @include mixin.text;
+  color: #fff;
+  margin-bottom: 33px;
+}
+
+.news__form {
+  position: relative;
+}
+
+.news__label {}
+
+.news__input-text {
+  width: 343px;
+  height: 50px;
+  border-radius: 4px;
+
+  &::placeholder {
+    @include mixin.text;
+    color: var(--gray-paragraph, #6C6C72);
+    padding: 13px 17px;
+  }
+}
+
+.news__button {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}

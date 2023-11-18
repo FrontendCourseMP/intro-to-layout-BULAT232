@@ -1,0 +1,37 @@
+@use "../ulits/mixin";
+
+.about {
+  
+}
+
+.about__wrapper {
+  @include mixin.mobile-wrapper
+}
+
+.about__title {
+  @include mixin.title;
+  font-size: 25px;
+  margin-top: 60px;
+}
+
+.about__text {
+  @include mixin.text;
+  color: var(--gray-paragraph, #6C6C72);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.about__content-wrapper {
+
+}
+
+.about__img {
+  display: block;
+  margin: 40px auto 0 auto;
+
+}
+
+.about__advantages {
+
+}
