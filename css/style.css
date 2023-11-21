@@ -1,5 +1,28 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+/* josefin-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/josefin-sans-v32-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/josefin-sans-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/josefin-sans-v32-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 html,
 body,
 div,
@@ -201,6 +224,18 @@ h1 {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Josefin Sans", sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 16px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -257,10 +292,6 @@ h1 {
   transform: translateX(-50%);
 }
 
-.logo__img {
-  padding: 24px 10px;
-}
-
 .burger {
   width: 18px;
   height: 16px;
@@ -284,6 +315,10 @@ h1 {
 }
 .burger::before {
   top: 0;
+}
+
+.logo__img {
+  padding: 24px 10px;
 }
 
 .info {
@@ -330,7 +365,7 @@ h1 {
   line-height: 1.5;
   text-align: center;
   color: var(--Royal-blue, #5956E9);
-  font-size: 25px;
+  font-size: 2.5rem;
   margin-bottom: 18px;
 }
 
@@ -340,7 +375,7 @@ h1 {
   line-height: 1.5;
   font-style: normal;
   font-size: 16px;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--gray-paragraph, #6C6C72);
   margin-bottom: 30px;
   text-align: left;
@@ -353,7 +388,7 @@ h1 {
   line-height: 1.5;
   text-align: center;
   color: var(--Black, #232233);
-  font-size: 20px;
+  font-size: 20rem;
   margin-bottom: 18px;
 }
 
@@ -375,7 +410,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   margin-top: 60px;
 }
 
@@ -386,7 +421,6 @@ h1 {
   font-style: normal;
   font-size: 16px;
   color: var(--gray-paragraph, #6C6C72);
-  font-size: 16px;
   text-align: center;
   margin-top: 18px;
 }
@@ -417,7 +451,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 20px;
+  font-size: 20rem;
   margin-bottom: 3px;
   text-align: left;
 }
@@ -428,7 +462,7 @@ h1 {
   line-height: 1.5;
   font-style: normal;
   font-size: 16px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .advantages__img {
@@ -459,12 +493,12 @@ h1 {
   line-height: 1.5;
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 20rem;
   margin-bottom: 18px;
 }
 
 .features__title--big {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .features__text {
@@ -507,7 +541,7 @@ h1 {
   text-align: center;
   color: var(--Black, #232233);
   /* H5-25px */
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: left;
   width: 288px;
   margin-bottom: 18px;
@@ -520,7 +554,7 @@ h1 {
   font-style: normal;
   font-size: 16px;
   color: var(--gray-paragraph, #6C6C72);
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-bottom: 41px;
 }
 
@@ -559,7 +593,7 @@ h1 {
   line-height: 1.5;
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 20rem;
   margin-bottom: -3px;
 }
 
@@ -569,7 +603,7 @@ h1 {
   line-height: 1.5;
   font-style: normal;
   font-size: 16px;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #fff;
   text-align: center;
 }
@@ -600,7 +634,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #fff;
   margin-bottom: 40px;
 }
@@ -643,7 +677,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #fff;
   margin-bottom: 18px;
 }
@@ -701,7 +735,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: var(--Black, #232233);
 }
 
@@ -761,7 +795,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   margin-bottom: 18px;
 }
 
@@ -796,7 +830,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 20px;
+  font-size: 20rem;
   text-align: left;
   margin-top: 30px;
   margin-bottom: 18px;
@@ -816,7 +850,7 @@ h1 {
 .articles__link {
   color: var(--Royal-blue, #5956E9);
   font-family: Josefin Sans;
-  font-size: 20px;
+  font-size: 20rem;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
@@ -870,7 +904,7 @@ h1 {
   line-height: 1.5;
   text-align: center;
   color: var(--Black, #232233);
-  font-size: 20px;
+  font-size: 20rem;
   display: block;
   margin: 0 auto;
 }
@@ -968,7 +1002,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #fff;
   text-align: left;
   margin-bottom: 11px;
