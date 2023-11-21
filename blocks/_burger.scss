@@ -1,0 +1,32 @@
+@use "../ulits/mixin";
+
+.burger {
+  width: 18px;
+  height: 16px;
+  position: relative;
+
+  margin-left: 12px;
+
+  &::after,
+  &::before,
+  span {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  span {
+    top: 7px;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+}

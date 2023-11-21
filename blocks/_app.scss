@@ -15,7 +15,7 @@
   @include mixin.title;
   color: var(--Black, #232233);
   /* H5-25px */
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: left;
   width: 288px;
   margin-bottom: 18px;
@@ -24,7 +24,7 @@
 .app__text {
   @include mixin.text;
   color: var(--gray-paragraph, #6C6C72);
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-bottom: 41px;
 }
 
@@ -60,13 +60,13 @@
 .app__number {
   @include mixin.title;
   color: #fff;
-  font-size: 20px;
+  font-size: 20rem;
   margin-bottom: -3px;
 }
 
 .app__info {
   @include mixin.text;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #fff;
   text-align: center;
 }

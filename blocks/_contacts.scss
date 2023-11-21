@@ -41,7 +41,7 @@
 .contacts__text {
   @include mixin.title;
   color: var(--Black, #232233);
-  font-size: 20px;
+  font-size: 20rem;
   display: block;
   margin: 0 auto;
 }
