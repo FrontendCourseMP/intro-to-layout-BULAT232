@@ -1,14 +1,18 @@
 @use "../ulits/mixin";
 
+.about{
+
+}
 
 .about__wrapper {
-  @include mixin.mobile-wrapper
+  @include mixin.mobile-wrapper;
+      padding-top: 60px;
+        padding-bottom: 70px;
 }
 
 .about__title {
   @include mixin.title;
   font-size: 2.5rem;
-  margin-top: 60px;
 }
 
 .about__text {
@@ -32,3 +36,4 @@
 .about__advantages {
 
 }
+

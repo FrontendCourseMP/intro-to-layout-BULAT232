@@ -5,12 +5,13 @@
   background: url(../img/review__bg.jpg), lightgray 50% / cover no-repeat;
   background-size: cover; 
   background-repeat: no-repeat;
-  padding-bottom: 62px; 
-  padding-top: 60px;
+
 }
 
 .rewiev__wrapper {
 /*       @include mixin.mobile-wrapper; */
+  padding-bottom: 62px;
+    padding-top: 60px;
 }
 
 .rewiev__title {

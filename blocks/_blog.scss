@@ -1,11 +1,13 @@
 @use "../ulits/mixin";
 
 .blog {
-  margin-top: 60px;
+
 }
 
 .blog__wrapper {
       @include mixin.mobile-wrapper;
+        padding-top: 60px;
+          padding-bottom: 1px;
 }
 
 .blog__title {

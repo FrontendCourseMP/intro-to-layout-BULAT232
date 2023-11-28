@@ -1,7 +1,7 @@
 @use "../ulits/mixin";
 
 .advantages {
-  margin-top: 75px;
+  padding-top: 75px;
 }
 
 .advantages__item {
@@ -15,6 +15,7 @@
     margin-bottom: 20px;
     position: relative;
 }
+
 
 .advantages__title {
   @include mixin.title;

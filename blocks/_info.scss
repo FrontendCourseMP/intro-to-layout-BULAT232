@@ -3,16 +3,15 @@
 .info {
   padding-top: 128px;
   padding-bottom: 113px;
-  background: url('../img/info__bg.jpg');
+  background: url("../img/info__bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-
-
 }
 
-.info__wrapper{
-  @include mixin.mobile-wrapper
+.info__wrapper {
+  max-width: 343px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .info__container {
@@ -27,27 +26,35 @@
   width: 323px;
   margin: 0 auto;
   position: relative;
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 323px;
-    height: 370px;
-    border: 10px solid #7572FF;
-  }
+.info__box::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 323px;
+  height: 370px;
+  border: 10px solid #7572FF;
 }
 
 .info__title {
-  @include mixin.title;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
   color: var(--Royal-blue, #5956E9);
   font-size: 2.5rem;
   margin-bottom: 18px;
 }
 
 .info__text {
-  @include mixin.text;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 1.6rem;
   font-size: 1.6rem;
   color: var(--gray-paragraph, #6C6C72);
   margin-bottom: 30px;
@@ -55,17 +62,18 @@
 }
 
 .info__subtitle {
-  @include mixin.title;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
   color: var(--Black, #232233);
   font-size: 2rem;
   margin-bottom: 18px;
 }
 
-.info__download {}
-
 .info__example {
   margin-top: 60px;
   display: block;
   margin-left: auto;
-
 }

@@ -29,7 +29,8 @@
 .articles__text {
   @include mixin.text;
   margin-bottom: 20px;
-    margin-left: 18px;
+    padding-left: 18px;
+    padding-right: 8px;
 }
 
 .articles__link {
