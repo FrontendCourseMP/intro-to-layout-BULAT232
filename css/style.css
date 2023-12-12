@@ -257,8 +257,7 @@ body {
 }
 
 .header__wrapper {
-  max-width: 343px;
-  width: 100%;
+  width: 96%;
   margin: 0 auto;
   background-color: #FFF;
   height: 40px;
@@ -327,6 +326,7 @@ body {
   background: url("../img/info__bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .info__wrapper {
@@ -364,7 +364,6 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.5;
-  text-align: center;
   color: var(--Royal-blue, #5956E9);
   font-size: 2.5rem;
   margin-bottom: 18px;
@@ -387,7 +386,6 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.5;
-  text-align: center;
   color: var(--Black, #232233);
   font-size: 2rem;
   margin-bottom: 18px;
@@ -395,14 +393,16 @@ body {
 
 .info__example {
   margin-top: 60px;
+  padding-left: 45px;
   display: block;
   margin-left: auto;
 }
 
 .about__wrapper {
-  max-width: 343px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   padding-top: 60px;
   padding-bottom: 70px;
 }
@@ -437,13 +437,13 @@ body {
 }
 
 .advantages__item {
-  width: 343px;
+  width: 100%;
   border-radius: 10px;
   background: var(--White, #FFF);
   padding: 18px 16px 10px 61px;
   /* Effect-1 */
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   position: relative;
 }
 
@@ -481,9 +481,10 @@ body {
 }
 
 .features__wrapper {
-  max-width: 343px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -527,9 +528,10 @@ body {
 }
 
 .app__wrapper {
-  max-width: 343px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   width: 329px;
   padding-top: 103px;
   padding-bottom: 60px;
@@ -621,9 +623,10 @@ body {
 }
 
 .how-to-use__wrapper {
-  max-width: 343px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   padding-top: 60px;
   padding-bottom: 116px;
   margin-bottom: 134px;
@@ -654,8 +657,8 @@ body {
 .how-to-use__video {
   position: absolute;
   bottom: 0;
-  left: 0;
-  transform: translateY(50%);
+  left: 50%;
+  transform: translate(-50%, 50%);
   border-radius: 10px;
   /* Effect-2 */
   box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
@@ -782,9 +785,10 @@ body {
 }
 
 .blog__wrapper {
-  max-width: 343px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   padding-top: 60px;
   padding-bottom: 1px;
 }
@@ -816,7 +820,7 @@ body {
   /* Effect-1 */
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 }
 
 .articles__img {
@@ -863,13 +867,12 @@ body {
 }
 
 .contacts {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  max-width: 343px;
-  width: 100%;
+  max-width: 750px;
+  width: 87%;
   margin: 0 auto;
+  padding: 20px 16px;
   border-radius: 10px;
-  background: var(--White, #FFF);
+  background: #FFF;
   filter: drop-shadow(0px 10px 100px rgba(0, 0, 0, 0.24));
   position: relative;
 }
@@ -916,9 +919,10 @@ body {
 }
 
 .footer__wrapper {
-  max-width: 343px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   padding-top: 220px;
   padding-bottom: 30px;
 }
@@ -1021,6 +1025,7 @@ body {
 
 .news__form {
   position: relative;
+  max-width: 343px;
 }
 
 .news__input-text {
@@ -1084,6 +1089,26 @@ body {
   line-height: normal;
 }
 
+.header__box {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__box {
+    display: flex;
+    position: absolute;
+    top: -27px;
+    color: #ffffff;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .box .social__list {
+    margin-top: 0px;
+  }
+  .social__item_border-none {
+    border: none;
+  }
+}
 html {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;

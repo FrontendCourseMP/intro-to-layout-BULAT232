@@ -1,8 +1,6 @@
 @use "../ulits/mixin";
 
-.about{
-
-}
+.about{}
 
 .about__wrapper {
   @include mixin.mobile-wrapper;
