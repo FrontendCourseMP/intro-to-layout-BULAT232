@@ -21,3 +21,10 @@
   color: #fff;
   @include mixin.text;
 }
+
+@media(min-width: 768px) {
+
+  .links {
+    margin-top: 0;
+  }
+}

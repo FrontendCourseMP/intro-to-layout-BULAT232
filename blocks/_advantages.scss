@@ -7,14 +7,14 @@
 .advantages__item {
   width: 100%;
   border-radius: 10px;
-    background: var(--White, #FFF);
-    padding: 18px 16px 10px 61px;
-  
-    /* Effect-1 */
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  background: var(--White, #FFF);
+  padding: 18px 16px 10px 61px;
 
-    margin: 0 auto 20px auto;
-    position: relative;
+  /* Effect-1 */
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+
+  margin: 0 auto 20px auto;
+  position: relative;
 }
 
 
@@ -30,9 +30,19 @@
   font-size: 1.6rem;
 }
 
-.advantages__img{
+.advantages__img {
   display: block;
   position: absolute;
   top: 18px;
   left: 18px;
+}
+
+
+@media(min-width: 1440px) {
+  .advantages {
+    flex: 1 1 570px;
+    padding: 0;
+  }
+
+  
 }

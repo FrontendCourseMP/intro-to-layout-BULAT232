@@ -2,16 +2,15 @@
 
 
 .rewiev {
-  background: url(../img/review__bg.jpg), lightgray 50% / cover no-repeat;
-  background-size: cover; 
+  background: url(../img/review__background.png), lightgray 50% / cover no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .rewiev__wrapper {
-/*       @include mixin.mobile-wrapper; */
+  /*       @include mixin.mobile-wrapper; */
   padding-bottom: 62px;
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .rewiev__title {
@@ -27,4 +26,21 @@
   text-align: center;
   max-width: 300px;
   margin: 0 auto 32px auto;
+}
+
+@media(min-width: 768px) {
+  .rewiev__wrapper {
+    /*       @include mixin.mobile-wrapper; */
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  .rewiev__title {
+    font-size: 3.125rem;
+    font-weight: 700;
+  }
+
+  .slider__item {
+    min-width: 450px;
+  }
 }

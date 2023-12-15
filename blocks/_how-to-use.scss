@@ -35,3 +35,52 @@
   /* Effect-2 */
   box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
 }
+
+@media(min-width: 768px) {
+  .how-to-use__wrapper {
+      @include mixin.desktop-wrapper;
+      padding-top: 60px;
+      padding-bottom: 116px;
+      margin-bottom: 134px;
+      position: relative;
+    }
+  /*   .how-to-use__wrapper {
+      @include mixin.desktop-wrapper;
+  } */
+  .how-to-use__title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    max-width: 375px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+
+  .how-to-use__text {
+    max-width: 450px;
+    margin: 0 auto 60px auto;
+  }
+
+  .how-to-use__video {
+    width: 570px;
+    border-radius: 18px;
+  }
+
+  .how-to-use__wrapper {
+    margin-bottom: 280px;
+  }
+}
+
+@media(min-width: 1440px) {
+  .how-to-use__title {
+    max-width: 900px;
+  }
+
+  .how-to-use__video {
+    width: 770px;
+    border-radius: 25px
+  }
+
+  .how-to-use__text {
+    margin-bottom: 120px;
+  }
+}

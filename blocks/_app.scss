@@ -1,14 +1,16 @@
 @use "../ulits/mixin";
 
-.app {
-
-}
+.app {}
 
 .app__wrapper {
   @include mixin.mobile-wrapper;
-  width: 329px;
   padding-top: 103px;
   padding-bottom: 60px;
+}
+
+.app__box {
+  width: 329px;
+  margin: 0 auto;
 }
 
 .app__title {
@@ -30,7 +32,7 @@
 
 .app__download {
   display: flex;
-  justify-content: space-between;
+  gap: 25px;
 }
 
 .app__list {
@@ -75,4 +77,72 @@
   width: 335px;
   height: auto;
   margin-top: 60px;
+}
+
+@media(min-width: 768px) {
+  .app__wrapper {
+    @include mixin.desktop-wrapper;
+    display: flex;
+    /* gap: 28px; */
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 160px;
+    padding-bottom: 120px;
+  }
+
+  .app__title {
+    font-size: 31.25px;
+    font-weight: 700;
+  }
+
+
+  .app__img--big {
+    margin: 0 0 20px 0;
+    object-fit: scale-down;
+
+  }
+}
+
+@media(min-width: 1440px) {
+  .app__wrapper {
+    gap: 80px;
+    justify-content: centers;
+  }
+
+  .app__box {
+    width: 570px;
+    margin: 0;
+  }
+
+  .app__item {
+    width: 170px;
+    height: 176px;
+    padding: 30px 0 20px;
+  }
+
+  .app__img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 18px;
+  }
+
+  .app__number {
+
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+    line-height: normal;
+  }
+
+  .app__info {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .app__img--big {
+    margin: 0;
+    width: 516px;
+    height: auto;
+    object-fit: contain;
+  }
+
 }

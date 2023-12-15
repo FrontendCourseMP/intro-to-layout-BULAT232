@@ -1,11 +1,11 @@
 @use "../ulits/mixin";
 
-.about{}
+.about {}
 
 .about__wrapper {
   @include mixin.mobile-wrapper;
-      padding-top: 60px;
-        padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .about__title {
@@ -16,22 +16,67 @@
 .about__text {
   @include mixin.text;
   color: var(--gray-paragraph, #6C6C72);
-  
+
   text-align: center;
   margin-top: 18px;
 }
 
-.about__content-wrapper {
-
-}
+.about__content-wrapper {}
 
 .about__img {
   display: block;
   margin: 40px auto 0 auto;
+}
+
+.about__advantages {}
+
+@media(min-width: 768px) {
+  .about__wrapper {
+    @include mixin.desktop-wrapper;
+    padding-top: 120px;
+    padding-bottom: 162px;
+  }
+
+  .about__title {
+    font-size: 3.125rem;
+    margin-bottom: 18px;
+  }
+
+  .about__text {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+
+  .about__content-wrapper {
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__img {
+    display: block;
+    margin: 40px 0 0 0;
+    flex: 0 1 auto;
+    object-fit: scale-down;
+  }
+
+  .about__text {
+    margin-bottom: 60px;
+  }
+
 
 }
 
-.about__advantages {
+@media(min-width: 1440px) {
+  .advantages__item {
+    height: 31%;
+  }
 
+  .about__img {
+    display: block;
+    margin: 0;
+    flex: 0 1 384px;
+    object-fit: contain;
+  }
 }
-

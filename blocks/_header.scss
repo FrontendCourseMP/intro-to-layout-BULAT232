@@ -40,3 +40,21 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media(min-width: 1440px) {
+  .header__wrapper {
+    @include mixin.desktop-wrapper;
+    padding: 0;
+    height: 60px;
+  }
+
+  .header__nav {}
+
+  .header__download {
+    display: none;
+  }
+
+  .header__burger {
+    display: none;
+  }
+}

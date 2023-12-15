@@ -1,10 +1,8 @@
 @use "../ulits/mixin";
 
-.slider {
+.slider {}
 
-}
-
-.slider__box{
+.slider__box {
   display: flex;
   overflow-x: hidden;
   justify-content: center;
@@ -27,7 +25,7 @@
   transform: scale(1, 0.86);
 }
 
-.slider__item_active{
+.slider__item.slider__item_active {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -66,22 +64,46 @@
 }
 
 .slider__button {
+
   /* width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: #FFF; */
-  svg{
-    circle:nth-child(2){
+  svg {
+    circle:nth-child(2) {
       display: none;
     }
   }
+
   margin: 0 9px 0 9px;
 
   &_active {
     svg {
-        circle:nth-child(2) {
-          display: block;
-        }
+      circle:nth-child(2) {
+        display: block;
       }
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .slider__name {
+    font-size: 3.125rem;
+  }
+
+  .slider__profession {
+    font-size: 2rem;
+  }
+
+  .slider__img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .slider__item {
+    width: 770px;
+
+    transform: scale(0.5, 0.86);
+
   }
 }

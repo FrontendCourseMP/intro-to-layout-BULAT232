@@ -1,18 +1,16 @@
 @use "../ulits/mixin";
 
-.blog {
-
-}
+.blog {}
 
 .blog__wrapper {
-      @include mixin.mobile-wrapper;
-        padding-top: 60px;
-          padding-bottom: 1px;
+  @include mixin.mobile-wrapper;
+  padding-top: 60px;
+  padding-bottom: 1px;
 }
 
 .blog__title {
   @include mixin.title;
-  font-size: 2.5rem;  
+  font-size: 2.5rem;
   margin-bottom: 18px;
 }
 
@@ -22,4 +20,28 @@
   margin-bottom: 40px;
 }
 
-.blog__articles {}
+
+
+@media(min-width: 768px) {
+
+  .blog__wrapper {
+    @include mixin.desktop-wrapper;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .blog__title {
+    font-size: 3.125rem;
+    font-weight: 700;
+  }
+
+  .blog__articles {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+  }
+
+  .articles__item {
+    margin: 0 auto 0 auto;
+  }
+}
