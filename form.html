@@ -80,24 +80,24 @@
       <h2 class="form__title">Registration</h2>
       <fieldset class="registration__personal-info">
         <legend class="visually-hidden">Поля со своим вводом</legend>
-        <div class="registration__name"><label>Name <input type="text" name="name"
+        <div class="registration__name"><label>Name <input required type="text" name="name"
               placeholder="write your name"></label></div>
-        <div class="registration__item"><label>Date of Birth<input type="date" name="date"></label></div>
+        <div class="registration__item"><label>Date of Birth<input required type="date" name="date"></label></div>
         <div class="registration__item registration__sex sex">
           <fieldset class="sex__fieldset">
             <legend class="sex__title">Sex</legend>
-            <label class="sex__label"><input class="sex__input" type="radio" name="sex" value="man">man</label>
-            <label class="sex__label"><input class="sex__input" type="radio" name="sex" value="woman">woman</label>
+            <label class="sex__label"><input required class="sex__input" type="radio" name="sex" value="man">man</label>
+            <label class="sex__label"><input required class="sex__input" type="radio" name="sex" value="woman">woman</label>
           </fieldset>
         </div>
         <div class="registration__item registration__password password">
           <lable class="password__label" for="password">Password
-            <input class="password__input" type="password" name="password" id="password" value="password">
+            <input required class="password__input" type="password" name="password" id="password" value="password">
           </lable>
         </div>
 
         <div class="registration__item registration__time time">
-          <select class="time__list">
+          <select required class="time__list">
             <option class="time__item" value="morning">morning</option>
             <option class="time__item" value="afternoon">afternoon</option>
             <option class="time__item" value="evening">evening</option>
@@ -106,11 +106,11 @@
       </fieldset>
       <fieldset class="registration__contact-data">
         <div class="registration__item registration__email email">
-          <label class="email__label">email <input class="email__input" type="email" name="email"
+          <label class="email__label">email <input required class="email__input" type="email" name="email"
               placeholder="write your name"></label>
         </div>
         <div class="registration__item registration__tel tel">
-          <label class="tel__label">telephone <input class="tel__input" type="tel" name="tel"
+          <label class="tel__label">telephone <input required class="tel__input" type="tel" name="tel"
               placeholder="write your telephone"></label>
         </div>
       </fieldset>
