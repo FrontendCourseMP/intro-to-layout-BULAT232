@@ -16,3 +16,13 @@ body{
 :root{
   font-size: 62.5%;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main{
+  flex: 2 1 auto;
+}

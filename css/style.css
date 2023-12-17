@@ -236,6 +236,16 @@ body {
   font-size: 62.5%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 2 1 auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -271,7 +281,7 @@ body {
 
 .header__download {
   color: var(--White, #FFF);
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: normal;
   padding: 12px 6px;
@@ -474,7 +484,7 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: 70px;
   }
   .info__box {
     width: 356px;
@@ -498,8 +508,17 @@ body {
     height: 396px;
     border: 10px solid #7572FF;
   }
+  .info__example {
+    margin-top: 60px;
+    padding-left: 0;
+    display: block;
+    margin-left: auto;
+  }
 }
 @media (min-width: 1440px) {
+  .info__wrapper {
+    justify-content: space-between;
+  }
   .info__box {
     flex: 0 0 570px;
   }
@@ -525,8 +544,9 @@ body {
     border: 18px solid #7572FF;
   }
   .info__example {
-    height: 606px;
+    height: 725px;
     margin-top: 0;
+    margin-left: 74px;
   }
 }
 .about__wrapper {
@@ -718,7 +738,7 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .features__title--big {
+  .features__title.features__title--big {
     font-size: 3.125rem;
     font-weight: 700;
     margin-bottom: 60px;
@@ -804,7 +824,7 @@ body {
 }
 @media (min-width: 1440px) {
   .features__title {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   .features__img--big {
     width: 375px;
@@ -1723,6 +1743,99 @@ body {
     flex: 0 0 570px;
   }
 }
+.registration {
+  width: 100%;
+  padding: 100px 20px;
+  margin: 0 auto;
+  max-width: 400px;
+  font-size: 2rem;
+}
+
+label,
+.sex__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-size: 2.5rem;
+}
+
+.registration__item {
+  margin-top: 20px;
+}
+
+.registration__button {
+  color: var(--White, #FFF);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 12px;
+  display: block;
+  border-radius: 3px;
+  background: var(--Royal-blue, #5956E9);
+  margin-right: 3px;
+}
+
+.form__buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=tel],
+input[type=password],
+.time__list {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 3px solid #1a6bc4;
+  border-radius: 7px;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=date]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=password]::-moz-placeholder, .time__list::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-size: 2rem;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=date]::placeholder,
+input[type=tel]::placeholder,
+input[type=password]::placeholder,
+.time__list::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-size: 2rem;
+}
+
+.time__item {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-size: 2rem;
+}
+
 html {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;

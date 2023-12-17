@@ -57,7 +57,7 @@
   }
 
 
-  .features__title--big {
+  .features__title.features__title--big {
     font-size: 3.125rem;
     font-weight: 700;
     margin-bottom: 60px;
@@ -166,7 +166,7 @@
 
 @media(min-width: 1440px) {
   .features__title {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 
   .features__img--big {

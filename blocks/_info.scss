@@ -85,7 +85,7 @@
     @include mixin.desktop-wrapper;
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: 70px;
   }
 
   .info__box {
@@ -113,10 +113,19 @@
     height: 396px;
     border: 10px solid #7572FF;
   }
+
+  .info__example {
+    margin-top: 60px;
+    padding-left: 0;
+    display: block;
+    margin-left: auto;
+  }
 }
 
 @media(min-width: 1440px) {
-
+  .info__wrapper {
+    justify-content: space-between;
+  }
 
   .info__box {
     flex: 0 0 570px;
@@ -148,7 +157,8 @@
   }
 
     .info__example {
-      height: 606px;
+      height: 725px;
       margin-top: 0;
+      margin-left: 74px;
     }
 }

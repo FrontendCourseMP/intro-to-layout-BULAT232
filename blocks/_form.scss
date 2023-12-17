@@ -1,0 +1,121 @@
+@use "../ulits/mixin";
+
+.registration {
+  width: 100%;
+  padding: 100px 20px;
+  margin: 0 auto;
+  max-width: 400px;
+  font-size: 2rem;
+}
+
+label,
+.sex__title {
+  @include mixin.text;
+  font-size: 2.5rem;
+
+}
+
+.registration__name {}
+
+.registration__item {
+  margin-top: 20px;
+}
+
+.registration__sex {}
+
+.registration__password {}
+
+.registration__email {}
+
+.registration__tel {}
+
+.registration__time {}
+
+.registration__button {
+    color: var(--White, #FFF);
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: normal;
+      padding: 12px 12px;
+      display: block;
+      border-radius: 3px;
+      background: var(--Royal-blue, #5956E9);
+      margin-right: 3px;
+}
+
+.form__buttons{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.form {}
+
+.form__title {
+  @include mixin.title;
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+
+.sex {}
+
+.sex__fieldset {}
+
+.sex__label {}
+
+.sex__input {}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+.time__list {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 3px solid #1a6bc4;
+  border-radius: 7px;
+
+
+  &::placeholder {
+    @include mixin.text;
+    font-size: 2rem;
+  }
+}
+
+.time__item {
+  @include mixin.text;
+  font-size: 2rem;
+}
+
+
+
+.visually-hidden {}
+
+.password {}
+
+.password__label {}
+
+.password__input {}
+
+
+.email {}
+
+.email__label {}
+
+.email__input {}
+
+.tel {}
+
+.tel__label {}
+
+.tel__input {}
+
+.time {}
+
+.time__list {}
+
+.time__item {}
