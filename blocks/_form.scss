@@ -32,18 +32,33 @@ label,
 .registration__time {}
 
 .registration__button {
-    color: var(--White, #FFF);
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: normal;
-      padding: 12px 12px;
-      display: block;
-      border-radius: 3px;
-      background: var(--Royal-blue, #5956E9);
-      margin-right: 3px;
+  color: var(--White, #FFF);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 12px;
+  display: block;
+  border-radius: 3px;
+  background: var(--Royal-blue, #5956E9);
+  margin-right: 3px;
+  transition: linear .2s;
 }
 
-.form__buttons{
+.registration__button:hover {
+  color: #FFF;
+  box-shadow: -3px 3px #0f0f0f;
+  transform: translate(3px, -3px);
+
+}
+
+.registration__button:active {
+  color: #FFF;
+  box-shadow: none;
+  transform: translate(0, 0);
+
+}
+
+.form__buttons {
   display: flex;
   gap: 10px;
   margin-top: 20px;
@@ -63,9 +78,16 @@ label,
 
 .sex__fieldset {}
 
-.sex__label {}
+.sex__label {
+  display: block;
+}
 
-.sex__input {}
+.sex__input:checked+span {
+  color: #5956E9;
+  font-size: 3rem;
+}
+
+
 
 input[type="text"],
 input[type="email"],
@@ -78,7 +100,8 @@ input[type="password"],
   padding: 10px;
   border: 3px solid #1a6bc4;
   border-radius: 7px;
-
+  @include mixin.text;
+  font-size: 2rem;
 
   &::placeholder {
     @include mixin.text;
@@ -86,12 +109,33 @@ input[type="password"],
   }
 }
 
+
+
 .time__item {
   @include mixin.text;
   font-size: 2rem;
 }
 
+label span {
+  transition: all 0.2s linear;
+}
 
+input:focus~span {
+  border: none;
+  color: #5956E9;
+  font-size: 3rem;
+  
+}
+
+label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.social__img {
+  transform: rotate(30deg) scale(150%) skew(20deg, 20deg);
+  background-color: #FFF;
+}
 
 .visually-hidden {}
 
@@ -119,3 +163,50 @@ input[type="password"],
 .time__list {}
 
 .time__item {}
+
+
+.pseudo {
+  @include mixin.desktop-wrapper;
+
+  &__list-opr {}
+
+  &__name {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  &__name::first-letter {
+    text-align: center;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    color: #1a6bc4;
+  }
+
+  &__opr {
+    font-size: 2rem;
+  }
+
+  &__opr::after {
+    content: '🛈';
+  }
+
+  &__list {
+    max-width: 500px;
+  }
+
+  &__item:nth-child(odd) {
+    color: #b2d611;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+  }
+
+  &__input:checked+span {
+    text-decoration: line-through;
+  }
+}

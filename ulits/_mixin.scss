@@ -5,6 +5,10 @@
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
+  &::selection {
+      color: #ffffff;
+      background: #5956E9;
+    }
 }
 
 @mixin text {
@@ -14,6 +18,10 @@
   line-height: 1.5;
   font-style: normal;
   font-size: 1.6rem;
+  &::selection {
+      color: gold;
+      background: red;
+    }
 }
 
 @mixin desktop-wrapper {

@@ -80,24 +80,43 @@
       <h2 class="form__title">Registration</h2>
       <fieldset class="registration__personal-info">
         <legend class="visually-hidden">Поля со своим вводом</legend>
-        <div class="registration__name"><label>Name <input required type="text" name="name"
-              placeholder="write your name"></label></div>
-        <div class="registration__item"><label>Date of Birth<input required type="date" name="date"></label></div>
+        <div class="registration__name">
+          <label>
+            
+            <input required type="text" name="name" placeholder="write your name">
+            <span>Name</span>
+          </label>
+        </div>
+        <div class="registration__item">
+          <label>
+            
+            <input required type="date" name="date">
+            <span>Date of Birth</span>
+          </label>
+        </div>
         <div class="registration__item registration__sex sex">
           <fieldset class="sex__fieldset">
             <legend class="sex__title">Sex</legend>
-            <label class="sex__label"><input required class="sex__input" type="radio" name="sex" value="man">man</label>
-            <label class="sex__label"><input required class="sex__input" type="radio" name="sex" value="woman">woman</label>
+            <label class="sex__label">
+              <input required class="sex__input" type="radio" name="sex" value="man">
+              <span>man</span>
+            </label>
+            <label class="sex__label">
+              <input required class="sex__input" type="radio" name="sex" value="woman">
+              <span>woman</span>
+            </label>
           </fieldset>
         </div>
         <div class="registration__item registration__password password">
-          <lable class="password__label" for="password">Password
+          <label class="password__label" for="password">
+            
             <input required class="password__input" type="password" name="password" id="password" value="password">
-          </lable>
+            <span>Password</span>
+          </label>
         </div>
 
         <div class="registration__item registration__time time">
-          <select required class="time__list">
+          <select name="time" required class="time__list">
             <option class="time__item" value="morning">morning</option>
             <option class="time__item" value="afternoon">afternoon</option>
             <option class="time__item" value="evening">evening</option>
@@ -106,12 +125,17 @@
       </fieldset>
       <fieldset class="registration__contact-data">
         <div class="registration__item registration__email email">
-          <label class="email__label">email <input required class="email__input" type="email" name="email"
-              placeholder="write your name"></label>
+          <label class="email__label">
+            
+            <input required class="email__input" type="email" name="email" placeholder="write your name">
+            <span>email</span>
+          </label>
         </div>
         <div class="registration__item registration__tel tel">
-          <label class="tel__label">telephone <input required class="tel__input" type="tel" name="tel"
-              placeholder="write your telephone"></label>
+          <label class="tel__label">
+            <input required class="tel__input" type="tel" name="tel" placeholder="write your telephone">
+            <span>telephone</span>
+          </label>
         </div>
       </fieldset>
 
@@ -122,6 +146,281 @@
 
     </form>
 
+    <form action="#" class="pseudo">
+      <dl class="pseudo__list-opr">
+        <dt class="pseudo__name">
+          Pseudo-element
+        </dt>
+        <dd class="pseudo__opr">
+          In CSS, a pseudo-element selector applies styles to parts of your document content in scenarios where there isn't a
+          specific HTML element to select. For example, rather than putting the first letter of each paragraph in its own element,
+          you can style them all with p::first-letter.
+        </dd>
+        <dt class="pseudo__name">
+          Pseudo-classes
+        </dt>
+        <dd class="pseudo__opr">
+          A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For
+          example, the pseudo-class :hover can be used to select a button when a user's pointer hovers over the button and this
+          selected button can then be styled.
+        </dd>
+      </dl>
+ 
+      <ul class="pseudo__list">
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::after</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::cue</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::first-letter</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::first-line</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::selection</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::slotted</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::backdrop</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::placeholder</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::marker</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::spelling-error (en-US)</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>::grammar-error</span>
+          </label>
+        </li>
+      </ul>
+
+      
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="pseudo__list">
+
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:optional</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:only-of-type</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:only-child</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:nth-of-type()</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:nth-last-of-type()</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:nth-last-child()</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:not()</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:left</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:nth-child()</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:link</span>
+          </label>
+        </li>
+        
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:last-of-type</span>
+          </label>
+        </li>
+
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:active</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:visited</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:valid</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:target</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:scope (en-US)</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:root</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:right</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:required</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:read-write</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:read-only</span>
+          </label>
+        </li>
+      
+        <li class="pseudo__item">
+          <label for="#" class="pseudo__label">
+            <input type="checkbox" class="pseudo__input">
+            <span>:out-of-range</span>
+          </label>
+        </li>
+      </ul>
+    </form>
+
 
   </main>
   <footer class="footer">
@@ -129,6 +428,7 @@
     <div class="footer__wrapper">
 
       <div class="footer__social social">
+        <img src="img/Logo(1).svg" alt="" class="social__img">
         <h3 class="social__title">Logo</h3>
         <p class="social__text">
           Lorem ipsum dolor

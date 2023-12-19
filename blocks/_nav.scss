@@ -45,7 +45,7 @@
     text-decoration: underline;
   }
 
-  .nav__item_background {
+  .nav__item.nav__item_background {
     color: var(--White, #FFF);
 
     /* H6-20px */
@@ -60,7 +60,26 @@
     background: var(--Royal-blue, #5956E9);
     width: 158px;
     padding: 12px 16px 8px;
+    
   }
 
+  .nav__item.nav__item_background:hover {
+    box-shadow: #232233;
+    color: #FFF;
+    box-shadow: -3px 3px #0f0f0f;
+    transform: translate(3px, -3px);
 
+  }
+
+  .nav__item.nav__item_background:active {
+    box-shadow: #232233;
+    color: #FFF;
+    box-shadow: none;
+    transform: translate(0, 0);
+
+  }
+
+  .nav__item:active {
+    color: #585858;
+  }
 }

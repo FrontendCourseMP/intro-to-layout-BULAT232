@@ -26,16 +26,27 @@
 
 .news__label {}
 
-.news__input-text {
+.news .news__label .news__input-text {
   width: 343px;
   height: 50px;
   border-radius: 4px;
-
+  @include mixin.text;
+  font-size: 2rem;
+  padding: 13px 17px;
+  display: block;
+  border: none;
   &::placeholder {
     @include mixin.text;
     color: var(--gray-paragraph, #6C6C72);
-    padding: 13px 17px;
+    font-size: 2rem;
   }
+
+
+}
+
+.news__label .news__input-text:focus {
+  background: #232233;
+  color: #fff;
 }
 
 .news__button {
@@ -50,7 +61,7 @@
     margin-top: 0;
   }
 
-  .news__input-text {
+    .news  .news__label .news__input-text {
     width: 100%;
     height: 50px;
     border-radius: 4px;
@@ -58,7 +69,6 @@
     &::placeholder {
       @include mixin.text;
       color: var(--gray-paragraph, #6C6C72);
-      padding: 13px 17px;
     }
   }
 }
