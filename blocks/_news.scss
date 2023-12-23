@@ -35,18 +35,22 @@
   padding: 13px 17px;
   display: block;
   border: none;
+  color: #fff;
   &::placeholder {
     @include mixin.text;
     color: var(--gray-paragraph, #6C6C72);
     font-size: 2rem;
   }
 
-
 }
 
 .news__label .news__input-text:focus {
   background: #232233;
-  color: #fff;
+  border: 1px solid #fff;
+
+  &::placeholder{
+    color: #fff;
+  }
 }
 
 .news__button {

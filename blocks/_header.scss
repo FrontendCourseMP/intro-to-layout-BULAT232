@@ -48,13 +48,21 @@
     height: 60px;
   }
 
+
+  .header__logo {
+    img {
+      width: 167px;
+    }
+
+  }
+
   .header__nav {}
 
   .header__download {
     display: none;
   }
 
-  
+
 
   .header__burger {
     display: none;
